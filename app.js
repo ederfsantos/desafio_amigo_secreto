@@ -37,7 +37,8 @@ function sortearAmigo() {
         //alert(indiceSorteado);
         amigoSorteado = amigos[indiceSorteado];
         document.getElementById('resultado').innerHTML = "";
-        document.getElementById('resultado').innerHTML+=`O amigo secreto sorteado foi: ${amigoSorteado} `;
+       // document.getElementById('resultado').innerHTML+=`O amigo secreto sorteado foi: ${amigoSorteado} `;
+        responsiveVoice.speak(document.getElementById('resultado').innerHTML+=`O amigo secreto sorteado foi: ${amigoSorteado} `,'Brazilian Portuguese Female',{rate:1.1});
 
     }
 }
