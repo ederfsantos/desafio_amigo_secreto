@@ -33,7 +33,7 @@ function sortearAmigo() {
     if (amigos.length == 0) {
         alert("A lista de amigos está vazia!");
     } else {
-        indiceSorteado = Math.floor(Math.random() * amigos.length);
+       let indiceSorteado = Math.floor(Math.random() * amigos.length);
         //alert(indiceSorteado);
         amigoSorteado = amigos[indiceSorteado];
         document.getElementById('resultado').innerHTML = "";
