@@ -11,12 +11,12 @@ function adicionarAmigo() {
         amigos.push(nomeAmigo);
         document.querySelector('input').value = '';
         console.log(amigos);
-       // atualizarListaDeAmigos();
+        atualizarListaDeAmigos();
     }
 
 
 }
-/*
+
 function atualizarListaDeAmigos() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = "";
@@ -27,4 +27,4 @@ function atualizarListaDeAmigos() {
 
 
 }
-*/
+
