@@ -21,10 +21,23 @@ function atualizarListaDeAmigos() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = "";
     for (let i = 0; i < amigos.length; i++) {
-        lista.innerHTML+=`<li> ${amigos[i]} </li>`;
+        lista.innerHTML += `<li> ${amigos[i]} </li>`;
 
     }
 
 
 }
 
+function sortearAmigo() {
+    let amigoSorteado;
+    if (amigos.length == 0) {
+        alert("A lista de amigos está vazia!");
+    } else {
+        indiceSorteado = Math.floor(Math.random() * amigos.length);
+        //alert(indiceSorteado);
+        amigoSorteado = amigos[indiceSorteado];
+        document.getElementById('resultado').innerHTML = "";
+        document.getElementById('resultado').innerHTML+=amigoSorteado;
+
+    }
+}
