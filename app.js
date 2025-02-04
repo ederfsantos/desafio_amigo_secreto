@@ -37,7 +37,7 @@ function sortearAmigo() {
         //alert(indiceSorteado);
         amigoSorteado = amigos[indiceSorteado];
         document.getElementById('resultado').innerHTML = "";
-        document.getElementById('resultado').innerHTML+=amigoSorteado;
+        document.getElementById('resultado').innerHTML+=`O amigo secreto sorteado foi: ${amigoSorteado} `;
 
     }
 }
